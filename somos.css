@@ -1,38 +1,113 @@
+/* Resetear márgenes y padding de todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-.container {
-    text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Estilos para el encabezado y navegación */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #8B0000; /* Rojo vino */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.descripcion {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 20px;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
-.boton-descarga {
-    background-color: tomato;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
+nav ul li {
+  margin: 0 15px;
 }
 
-.boton-descarga:hover {
-    background-color: #d64a32;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fafafa;
+}
+
+/* Contenedor principal */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección */
+.section {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  color: #8B0000;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Lista de puntos */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Botón interactivo */
+.cta-button {
+  background-color: #8B0000;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cta-button:hover {
+  background-color: #660000;
+  transform: scale(1.1);
+}
+
+/* Gráfico */
+canvas {
+  display: block;
+  margin: 30px auto;
+}
+
+/* Estilos de pie de página */
+footer {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
